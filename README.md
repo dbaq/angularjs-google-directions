@@ -16,6 +16,9 @@ or
 bower install git://github.com/dbaq/angularjs-google-directions.git
 ```
 
+Demo
+--
+See this [plunker](http://embed.plnkr.co/sfe1hrZcKsYeKRIMMUBJ/preview)
 
 Usage
 --
@@ -27,25 +30,19 @@ Usage
 Example
 --
 ```
-var myApp = angular.module('myApp',['ngGPlaces']);
+var myApp = angular.module('myApp', ['dbaq.google.directions']);
 
-// optional if you want to modify defaults
-myApp.config(function(ngGPlacesAPIProvider){
-  ngGPlacesAPIProvider.setDefaults({
-    radius:500
+myApp.controller('mainCtrl', function($scope, googleDirections) {
+  var args = {
+    origin: '37.7738571,-122.4102823',
+    destination: '37.7891231,-122.4173545',
+    travelMode: 'bicycling'
+  }
+
+
+  $scope.directions = googleDirections.getDirections(args).then(function(directions) {
+    return directions;
   });
-});
-
-myApp.controller('mainCtrl',function($scope,ngGPlacesAPI){
-  $scope.details = ngGPlacesAPI.placeDetails({reference:"really_long_reference_id"}).then(
-    function (data) {
-      return data;
-    });
-
-  $scope.data = ngGPlacesAPI.nearbySearch({latitude:-33.8665433, longitude:151.1956316}).then(
-    function(data){
-      return data;
-    });
 });
 ```
 
