@@ -25,7 +25,7 @@ Usage
 - Include the [Google Maps JS library](http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true_or_false) in your app
 - Add dbaq.google.directions as a dependency
 - Inject googleDirections as a dependency to your controller or other service
-- Invoke the getDirections method and pass in a latitude/longitude
+- Invoke the getDirections method and pass in an origin and a destination
 
 Example
 --
