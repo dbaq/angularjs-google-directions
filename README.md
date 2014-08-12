@@ -39,7 +39,6 @@ myApp.controller('mainCtrl', function($scope, googleDirections) {
     travelMode: 'bicycling'
   }
 
-
   $scope.directions = googleDirections.getDirections(args).then(function(directions) {
     return directions;
   });
