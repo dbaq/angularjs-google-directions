@@ -1,7 +1,7 @@
 AngularJS-Google-Directions
 =========
 
-An angular.js wrapper around the Google Directions API (heavily inspired from [AngularJS-Google-Places](https://github.com/arunisrael/angularjs-google-places))
+An angular.js wrapper around the Google Directions API (heavily inspired by [AngularJS-Google-Places](https://github.com/arunisrael/angularjs-google-places))
 
 Bower
 --
