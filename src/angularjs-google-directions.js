@@ -57,9 +57,10 @@ provider('googleDirections', function() {
 
         return {
             getDirections: function(args) {
-                args.travelMode = _travelModes[args.travelMode] || googleMaps.TravelMode.DRIVING;
-                args.unitSystem = _unitSystems[args.unitSystem] || googleMaps.UnitSystem.IMPERIAL;
-                return exec(args);
+                var _args = angular.copy(args);
+                _args.travelMode = _travelModes[args.travelMode] || googleMaps.TravelMode.DRIVING;
+                _args.unitSystem = _unitSystems[args.unitSystem] || googleMaps.UnitSystem.METRIC;
+                return exec(_args);
             }
         };
     };
