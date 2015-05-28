@@ -18,7 +18,7 @@ bower install git://github.com/dbaq/angularjs-google-directions.git
 
 Demo
 --
-See this [plunker](http://embed.plnkr.co/sfe1hrZcKsYeKRIMMUBJ/preview)
+See this [plunker](http://embed.plnkr.co/uiwQtK3E0f0KQuMoDf2Y/preview)
 
 Usage
 --
