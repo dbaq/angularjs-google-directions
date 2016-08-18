@@ -1,5 +1,6 @@
 {
   "name": "angularjs-google-directions",
+  "version": "0.1.0",
   "devDependencies": {
     "karma": "~0.10",
     "karma-jasmine": "~0.1",
