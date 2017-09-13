@@ -1,5 +1,6 @@
 AngularJS-Google-Directions
 =========
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/nnq4YKjaFeDVYQrFbBYw4qNV/dbaq/angularjs-google-directions'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/nnq4YKjaFeDVYQrFbBYw4qNV/dbaq/angularjs-google-directions.svg' /></a>
 
 An angular.js wrapper around the Google Directions API (heavily inspired by [AngularJS-Google-Places](https://github.com/arunisrael/angularjs-google-places))
 
